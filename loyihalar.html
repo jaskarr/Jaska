@@ -1,0 +1,119 @@
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jasur Studio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-white text-gray-800">
+  
+  <!-- Kirish animatsiyasi -->
+<div id="splash" class="splash">
+  <img src="logo.png" alt="Jasur Studio Logo" class="logo-animate" />
+</div>
+  
+  
+   <nav class="bg-white shadow-md fixed w-full z-40">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
+      <div class="text-2xl font-bold text-yellow-500">Jasur</div>
+      <div class="hidden md:flex space-x-6">
+        <a href="#" class="nav-link">Bosh sahifa</a>
+        <a href="#" class="nav-link">Loyihalar</a>
+        <a href="#" class="nav-link">Kompaniya</a>
+        <a href="#" class="nav-link">Aloqa</a>
+      </div>
+      <button id="menuBtn" class="md:hidden text-yellow-500">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="max-h-0 overflow-hidden transition-all duration-500 md:hidden bg-white px-4">
+      <a href="index.html" class="block py-2 nav-link">Bosh sahifa</a>
+      <a href="#" class="block py-2 nav-link">Loyihalar</a>
+      <a href="komp.html" class="block py-2 nav-link">Kompaniya</a>
+      <a href="aloqa.html" class="block py-2 nav-link">Aloqa</a>
+    </div>
+  </nav>
+
+  <div class="container max-w-5xl mx-auto px-4 py-16 space-y-12">
+    
+    
+    <!-- Loyihalar bo‘limi -->
+<section id="projects" class="bg-gray-50 py-16 px-4 sm:px-8">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-12 text-green-600">НАШИ ПРОЕКТЫ</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Loyiha 1 -->
+      <a href="card1.html" class="block bg-white rounded-xl overflow-hidden shadow hover:shadow-xl transition transform hover:-translate-y-1">
+        <img src="https://www.mbc.uz/storage/sliders/d2f76fef-273c-4b0d-b758-e16c88cac996.webp" alt="Biznes loyiha" class="w-full h-48 object-cover">
+        <div class="p-4 text-left">
+          <h3 class="text-xl font-bold text-gray-800">Biznes Loyiha</h3>
+          <p class="text-sm text-gray-600 mt-1">Turi: Бизнес</p>
+          <p class="text-sm text-gray-600">Manzil: Toshkent</p>
+        </div>
+      </a>
+
+      <!-- Loyiha 2 -->
+      <a href="card2.html" class="block bg-white rounded-xl overflow-hidden shadow hover:shadow-xl transition transform hover:-translate-y-1">
+        <img src="https://www.mbc.uz/storage/sliders/4a0f1d85-d599-4adc-b570-32fb50864328.webp" alt="Komfort loyiha" class="w-full h-48 object-cover">
+        <div class="p-4 text-left">
+          <h3 class="text-xl font-bold text-gray-800">Komfort Loyiha</h3>
+          <p class="text-sm text-gray-600 mt-1">Turi: Комфорт</p>
+          <p class="text-sm text-gray-600">Manzil: Samarqand</p>
+        </div>
+      </a>
+
+      <!-- Loyiha 3 -->
+      <a href="card3.html" class="block bg-white rounded-xl overflow-hidden shadow hover:shadow-xl transition transform hover:-translate-y-1">
+        <img src="https://www.mbc.uz/storage/sliders/3fed109e-9e75-4178-b5bc-824395eb578d.webp" alt="Premium loyiha" class="w-full h-48 object-cover">
+        <div class="p-4 text-left">
+          <h3 class="text-xl font-bold text-gray-800">Premium Loyiha</h3>
+          <p class="text-sm text-gray-600 mt-1">Turi: Премиум</p>
+          <p class="text-sm text-gray-600">Manzil: Toshkent, Yunusobod</p>
+        </div>
+      </a>
+      
+      <!-- Loyiha 4 -->
+<a href="card4.html" class="block bg-white rounded-xl overflow-hidden shadow hover:shadow-xl transition transform hover:-translate-y-1">
+  <img src="https://avatars.mds.yandex.net/i?id=146654d27952dce080bef37d0c7971fc797fe6ce-12393450-images-thumbs&n=13" alt="Eco loyiha" class="w-full h-48 object-cover">
+  <div class="p-4 text-left">
+    <h3 class="text-xl font-bold text-gray-800">Eco Loyiha</h3>
+    <p class="text-sm text-gray-600 mt-1">Turi: Экологик</p>
+    <p class="text-sm text-gray-600">Manzil: Buxoro</p>
+  </div>
+</a>
+
+<!-- Loyiha 5 -->
+<a href="card5.html" class="block bg-white rounded-xl overflow-hidden shadow hover:shadow-xl transition transform hover:-translate-y-1">
+  <img src="https://frankfurt.apollo.olxcdn.com/v1/files/1j1yqqa83bol2-UZ/image;s=1080x608" alt="Smart loyiha" class="w-full h-48 object-cover">
+  <div class="p-4 text-left">
+    <h3 class="text-xl font-bold text-gray-800">Smart Loyiha</h3>
+    <p class="text-sm text-gray-600 mt-1">Turi: Смарт</p>
+    <p class="text-sm text-gray-600">Manzil: Andijon</p>
+  </div>
+</a>
+
+<!-- Loyiha 6 -->
+<a href="card6.html" class="block bg-white rounded-xl overflow-hidden shadow hover:shadow-xl transition transform hover:-translate-y-1">
+  <img src="https://avatars.mds.yandex.net/i?id=d31642f079ce907c8fddd996dd17613ac6b89fd4-5333398-images-thumbs&n=13" alt="Classic loyiha" class="w-full h-48 object-cover">
+  <div class="p-4 text-left">
+    <h3 class="text-xl font-bold text-gray-800">Classic Loyiha</h3>
+    <p class="text-sm text-gray-600 mt-1">Turi: Классик</p>
+    <p class="text-sm text-gray-600">Manzil: Farg‘ona</p>
+  </div>
+</a>
+    </div>
+  </div>
+</section>
+    
+
+  <script src="main.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,110 @@
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jasur Studio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-white text-gray-800">
+  
+  <!-- Kirish animatsiyasi -->
+<div id="splash" class="splash">
+  <img src="logo.png" alt="Jasur Studio Logo" class="logo-animate" />
+</div>
+  
+   <nav class="bg-white shadow-md fixed w-full z-40">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
+      <div class="text-2xl font-bold text-yellow-500">Jasur</div>
+      <div class="hidden md:flex space-x-6">
+        <a href="#" class="nav-link">Bosh sahifa</a>
+        <a href="#" class="nav-link">Loyihalar</a>
+        <a href="#" class="nav-link">Kompaniya</a>
+        <a href="#" class="nav-link">Aloqa</a>
+      </div>
+      <button id="menuBtn" class="md:hidden text-yellow-500">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="max-h-0 overflow-hidden transition-all duration-500 md:hidden bg-white px-4">
+      <a href="index.html" class="block py-2 nav-link">Bosh sahifa</a>
+      <a href="loyihalar.html" class="block py-2 nav-link">Loyihalar</a>
+      <a href="komp.html" class="block py-2 nav-link">Kompaniya</a>
+      <a href="#" class="block py-2 nav-link">Aloqa</a>
+    </div>
+  </nav>
+
+  <div class="container max-w-5xl mx-auto px-4 py-16 space-y-12">
+    
+    <!-- HTML: contact.html -->
+<section id="contact" class="bg-white py-20 px-4 sm:px-8">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-4xl font-bold text-green-600 text-center mb-8">Biz bilan bog‘laning</h2>
+
+    <form id="contactForm" action="contact.php" method="POST" class="bg-gray-50 p-8 rounded-2xl shadow-lg space-y-6">
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div>
+          <label class="block text-gray-700 font-semibold mb-2">Ismingiz</label>
+          <input type="text" name="name" required class="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-green-500">
+        </div>
+        <div>
+          <label class="block text-gray-700 font-semibold mb-2">Email manzil</label>
+          <input type="email" name="email" required class="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-green-500">
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-semibold mb-2">Xabar</label>
+        <textarea name="message" rows="5" required class="w-full border border-gray-300 p-3 rounded-lg focus:ring-2 focus:ring-green-500"></textarea>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-xl transition shadow-md">
+          Yuborish
+        </button>
+      </div>
+    </form>
+
+    <!-- Toast xabari -->
+    <div id="toast" class="hidden fixed bottom-10 right-10 bg-green-600 text-white px-6 py-3 rounded-xl shadow-lg">
+      Xabaringiz yuborildi!
+    </div>
+  </div>
+</section>
+    
+    <section class="operator-section">
+  <h2>Bizning operatorlar</h2>
+  <div class="operators">
+    <div class="operator-card">
+      <img src="https://i.pinimg.com/736x/42/02/8c/42028c1354fc3f4250fb739e881118a4.jpg" alt="Operator 1" />
+      <div class="info">
+        <h3>Shahlo</h3>
+        <p class="status online">Onlayn</p>
+        <p>Tel: +998 99 123 45 67</p>
+        <a href="chat.html" class="chat-btn">Xabar yozish</a>
+      </div>
+    </div>
+
+    <div class="operator-card">
+      <img src="https://cs2.livemaster.ru/storage/22/60/ea71b5154cf6f89a3c31476b8deu--fedoras-formal-hats-fedora-hat-with-a-flat-brim-color-mustard.jpg" alt="Operator 2" />
+      <div class="info">
+        <h3>Farzona</h3>
+        <p class="status offline">Offline</p>
+        <p>Tel: +998 90 765 43 21</p>
+        <a href="chat.html" class="chat-btn">Xabar yozish</a>
+      </div>
+    </div>
+  </div>
+      
+      
+</section>
+    
+  <script src="main.js"></script>
+  
+</body>
+</html>

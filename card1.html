@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jasur Studio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Kirish animatsiyasi -->
+<div id="splash" class="splash">
+  <img src="logo.png" alt="Jasur Studio Logo" class="logo-animate" />
+</div>
+  
+  <nav class="bg-white shadow-md fixed w-full z-40">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
+      <div class="text-2xl font-bold text-yellow-500">Jasur</div>
+      <div class="hidden md:flex space-x-6">
+        <a href="#" class="nav-link">Bosh sahifa</a>
+        <a href="#" class="nav-link">Loyihalar</a>
+        <a href="#" class="nav-link">Kompaniya</a>
+        <a href="#" class="nav-link">Aloqa</a>
+      </div>
+      <button id="menuBtn" class="md:hidden text-yellow-500">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="max-h-0 overflow-hidden transition-all duration-500 md:hidden bg-white px-4">
+      <a href="index.html" class="block py-2 nav-link">Bosh sahifa</a>
+      <a href="loyihalar.html" class="block py-2 nav-link">Loyihalar</a>
+      <a href="komp.html" class="block py-2 nav-link">Kompaniya</a>
+      <a href="aloqa.html" class="block py-2 nav-link">Aloqa</a>
+    </div>
+  </nav>
+    
+    <section class="plans-section">
+  <h2>Uy chizmalari</h2>
+  <div class="plans-grid">
+    <div class="plan-card">
+      <img src="https://pb12218.profitbase.ru/uploads/preset/12218/67e1350e01914.png" alt="2 xonali uy chizmasi" />
+      <div class="plan-info">
+        <h3>2 xonali</h3>
+        <p>O‘lchami: 65 m²</p>
+        <p>Yili: 2025</p>
+      </div>
+    </div>
+    <div class="plan-card">
+      <img src="https://pb12218.profitbase.ru/uploads/preset/12218/66bb5a7688770.jpg" alt="3 xonali uy chizmasi" />
+      <div class="plan-info">
+        <h3>3 xonali</h3>
+        <p>O‘lchami: 90 m²</p>
+        <p>Yili: 2025</p>
+      </div>
+    </div>
+    <!-- Yana qo‘shish mumkin -->
+  </div>
+</section>
+  
+  <section class="map-section">
+  <h2>Toshkentdagi loyihalar joylashuvi</h2>
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95846.9786148659!2d69.17724932986395!3d41.31108194518619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b5d2d1a1371%3A0x6cb4a3b69a538195!2sTashkent%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1611685426891!5m2!1sen!2s"
+      width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </div>
+</section>
+  
+  <script src="main.js"></script>
+</body>
+</html>
